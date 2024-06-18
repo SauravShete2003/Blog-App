@@ -1,0 +1,9 @@
+.blogs-view-container{
+    margin: 20px auto;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+    
