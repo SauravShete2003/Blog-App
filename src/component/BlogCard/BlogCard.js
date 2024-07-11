@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import "./BlogCard.css"
-// import { findDOMNode } from "react-dom";
 
 
-function BlogCard({ id, title, recipe, author, date, categories }) {
+
+function BlogCard({  id ,title, recipe, author, date, categories }) {
   return (
     <Link className="cards-container" to={`/blog/${id}`}>
       <span className="title-heading">{title}</span>
@@ -15,6 +15,7 @@ function BlogCard({ id, title, recipe, author, date, categories }) {
       </div>
       {categories.map((category, i) => (
         <span key={i} className="categories-badge">{category}</span>
+        
       ))}
   
     </Link>
