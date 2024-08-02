@@ -12,11 +12,12 @@ function BlogView()
   <div className="blogs-view-container">
     <h1 className="blogs-view-title">{selecetedBlog.title}</h1>
     <img src={selecetedBlog.author.avatar} alt="auther" height={"40px"}/>
-    <p className="blogs-view-disc">{selecetedBlog.author.name}| {selecetedBlog.date}</p>
-    <span>{selecetedBlog.categories}</span>
-    <p>{selecetedBlog.recipe}</p>
-  
-  
+    <p className="blogs-view-disc">{selecetedBlog.author.name}| {selecetedBlog.date}</p> 
+    <img src={selecetedBlog.image} className="blog-image"/><br/>
+    <span className="blog-view">{selecetedBlog.views}</span><br/>
+    <span className="blog-comments">{selecetedBlog.comments}</span>
+    <p className="blog-recipe">{selecetedBlog.recipe}</p>
+    <p className="blog-process">{selecetedBlog.process}</p>
   </div>
    
   )

@@ -1,0 +1,11 @@
+.home-contanier{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 100px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

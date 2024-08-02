@@ -1,5 +1,5 @@
-
 import { element } from 'prop-types';
+import './index.css'
 import ReactDom from 'react-dom/client';
 import Home from './viwes/Home/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

@@ -3,21 +3,16 @@ import "./BlogCard.css"
 
 
 
-function BlogCard({  id ,title, recipe, author, date, categories }) {
+function BlogCard({  id ,title, recipe, author, date }) {
   return (
     <Link className="cards-container" to={`/blog/${id}`}>
-      <span className="title-heading">{title}</span>
-      <p>{recipe.substring(0, 70)}...</p>
-      <div className="author-card">
-        <img src={author.avatar} className="author-avatar" alt="Author avatar"/>
-        <span className="author-name">{author.name}</span>
-        <span className="author-date">{date}</span>
+      <span className="title-heading">{title}</span><br/>
+      <div className="user-details-container">
+      <span className="author-name">{author.name}</span>
+      <span className="author-date">{date}</span>
+      <img src={author.avatar} className="author-avatar" alt="Author avatar"/>
       </div>
-      {categories.map((category, i) => (
-        <span key={i} className="categories-badge">{category}</span>
-        
-      ))}
-  
+      <p>{recipe.substring(0, 70)}...</p>
     </Link>
   );
 }
