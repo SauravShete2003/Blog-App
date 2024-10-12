@@ -1,9 +1,8 @@
-import { element } from 'prop-types';
 import './index.css'
 import ReactDom from 'react-dom/client';
-import Home from './viwes/Home/Home';
+import Home from './views/Home/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import BlogView from './viwes/BlogView/BlogView';
+import BlogView from './views/BlogView/BlogView';
 
 const root = ReactDom.createRoot(document.getElementById("root"))
 

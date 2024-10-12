@@ -1,4 +1,4 @@
-import "./Home.css";
+import './Home.css';
 import blogs from "../../data";
 import BlogCard from "../../component/BlogCard/BlogCard";
 function Home() {
